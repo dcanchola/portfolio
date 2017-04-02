@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, intial-scale=1">
+	<title>AngularJS</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Antic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<main class="wrapper">
+<!--An AngularJS Mad Lib demo. Demonstrates binding input data and using an Angular controller-->
+<header class="site-header">
+	<h1>AngularJS</h1>
+</header>
+
+<section class="para">
+	<h2>Angular Demo</h2>
+
+	<h4>This AngularJS demo makes use of AngularJS combined with a controller. To collect the user input, ng-model is used to bind input to data. Expressions are used to output the data to the HTML view in the resulting paragraph. The controller includes a hide function through which the paragraph can be hidden until the user input is submitted.</h4>
+
+    <!--define the application and its controller-->
+	<div ng-app="madLibApp" ng-controller="myCtrl" class="madLib">
+		<h2>Angular Mad Lib</h2>
+		<p>Verb ending in "ed": <input type="text" ng-model="verb1"></p>
+		<p>Place: <input type="text" ng-model="location1"></p>
+		<p>Character: <input type="text" ng-model="character1"></p>
+		<p>Noun ending in "s": <input type="text" ng-model="noun1"></p>
+		<p>Game: <input type="text" ng-model="game1"></p>
+		<p>Noun: <input type="text" ng-model="noun2"></p>
+		<p>Body Part: <input type="text" ng-model="body1"></p>
+		<p>Place: <input type="text" ng-model="location2"></p>
+		<p>Career Field: <input type="text" ng-model="field1"></p>
+
+	<!--input data is bound to the paragraph through expressions-->
+	<button ng-click="hide()" class="submitDemo">Submit</button>
+		<p ng-hide="hidden" class="demoResult">On a bright and sunny day you {{ verb1 }} to the {{ location1 }}. While you were there, you ran into your old friend {{ character1 }}. You and {{ character1 }} caught up for awhile and talked about your {{ noun1 }}. Afterwards, the two of you decided to play a round of {{ game1 }}. You didn't remember {{ character1 }} being so competitive. {{ character1 }} got very angry after losing and threw a {{ noun2 }} at you. This broke your {{ body1 }} and you couldn't be friends anymore. {{ character1 }} moved away to {{ location2 }} and you stayed put to start a new career in {{ field1 }}. The end!</p>
+	</div>
+
+<h4>View the full demo code on <a href="https://gist.github.com/dcanchola/eeb7db8adcb50ef7d311#file-demo-html"><span class="bold">Github >></span></a></h4>
+<a href="index.html"><span class="bold">Back to Introduction</span></a>
+
+</section>
+
+<section class="para">
+	<h5>References
+	<ul class="noStyleUL">
+	<li><a href="http://www.w3schools.com/angular/default.asp">W3Schools</a></li>
+	<li><a href="https://docs.angularjs.org/guide/introduction">AngularJS.org</a></li>
+	<li><a href="https://docs.angularjs.org/misc/downloading">AngularJS.org (2)</a></li>
+	<li><a href="http://www.toptal.com/angular-js/a-step-by-step-guide-to-your-first-angularjs-app">Toptal</a></li>
+	</ul>
+	</h5>
+</section>
+
+</main>
+<!--controller script, toggles the hide() function for the result paragraph-->
+<script>
+	var madLibApp = angular.module("madLibApp", []);
+	madLibApp.controller("myCtrl", function($scope) {
+	    $scope.hidden = "true";
+	    $scope.hide = function() {
+	        $scope.hidden = !$scope.hidden;
+	};
+	});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, intial-scale=1">
+	<title>AngularJS</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+    	<link href='https://fonts.googleapis.com/css?family=Antic' rel='stylesheet' type='text/css'>
+    	<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<main class="wrapper">
+<header class="site-header">
+	<h1>AngularJS</h1>
+</header>
+<section class="para">
+	<h2>What is AngularJS?</h2>
+	<h4>AngularJS is a JavaScript framework developed by Google for building well-structured dynamic web applications.
+	It extends HTML syntax using directives and allows you to bind JavaScript data to HTML. Angular eliminates the need
+	for writing extensive code, therefore making way for easy-to-build and easy-to-maintain applications. </h4>
+</section>
+
+<section class="para">
+	<h2>AngularJS Unique Qualities</h2>
+	<ul>
+	<h4>
+		<li>Allows for easy building of single-page applications</li>
+		<li>Extends HTML with attributes such as directives and data binding, modules, controllers</li>
+		<li>Eliminates the need for direct DOM manipulation</li>
+		<li>Applications are easy to test within the browser</li>
+	</h4>
+	</ul>
+</section>
+
+<section class="para">
+	<h2>Getting Started with AngularJS</h2>
+	<h4>To get started with AngularJS, you will need to include the Angular scripts within your HTML document. This can
+	be done in one of two ways: including the link from the Google CDN server or downloading the files for a local copy.</h4>
+	<h3>Hosting from Google CDN Server</h3>
+	<h4>The Angular script should be included within the head of your document. You may include either the minified or non-minified
+	version. In this case, minified version 1.4.8 is included.</h4>
+	<picture>
+	<source media="(min-width:1000px)" srcset="images/angularScript.png">
+	<source media="(min-width:760px)" srcset="images/angularScriptMedium.png">
+	<img src="images/angularScriptSmall.png" alt="Code Sample">
+	</picture>
+	<h3>Hosting Locally</h3>
+	<h4>Head to <span class="bold"><a href="http://code.angularjs.org/">http://code.angularjs.org/</a></span> to select a version of Angular to download from the directory. To begin, version 1.4.8 may be a good choice as used in the last example.</h4>
+</section>
+
+<section class="para">
+	<h2>Angular Syntax and Examples</h2>
+	<h4>Here is an example of a basic AngularJS application. You will notice extended HTML attributes which allow for data binding with JavaScript.</h4>
+	<picture>
+	<source media="(min-width:760px)" srcset="images/angularSyntax.jpg">
+	<img src="images/angularSyntaxSmall.jpg" alt="Code Sample">
+	</picture>
+	<h3>Extended HTML, Explained</h3>
+	<h4>
+		<ul class="noStyleUL">
+			<li><span class="bold">ng-directives</span>: Angular directives are defined with the prefix ng-</li>
+			<li><span class="bold">ng-app</span>: ng-app defines an Angular application</li>
+			<li><span class="bold">ng-model</span>: ng-model binds HTML values to data</li>
+			<li><span class="bold">ng-bind</span>: ng-bind binds the data values to innerHTML</li>
+			<li><span class="bold">expressions</span>: Angular expressions may display data directly where the expression is written. Expressions are written in the form of {{ expression }}. They may contain data types such as model names or number expressions.</li>
+		</ul>
+	</h4>
+	<h3>The Result</h3>
+	<!--Brief Angular app to demonstrate result-->
+	<div ng-app="">
+		<p>Write a message!</p>
+		<p>Message: <input type="text" ng-model="message"></p>
+		<p ng-bind="message"></p>
+		<p>{{ message }}</p>
+	</div>
+	<h4>As you can see, we defined the app with an ng-app div. The message input field was extended with the ng-model "message" which binds the input text to JavaScript data.
+	ng-bind "message" binds the collected data to the innerHTML
+	of the paragraph. Expressions perform the same actions as the ng-bind directives, therefore writing a duplicated message underneath the first.</h4>
+	<h3>Modules and Controllers</h3>
+	<h4>Angular modules and controllers define the JavaScript side of your application.</h4>
+	<picture>
+	<source media="(min-width:760px)" srcset="images/controller.png">
+	<img src="images/controllerSmall.png" alt="Sample Code">
+	</picture>
+	<ul class="noStyleUL">
+	<h4>
+		<li><span class="bold">module</span>: The module defines the application and contains its contents. It always contains a controller. What the module is defined as should be used in the ng-app definition within the HTML.</li>
+		<li><span class="bold">controller</span>: An Angular controller is a JavaScript object which defines the data necessary for your application. In this example, the directive "myCtrl" defines the controller. $scope is a default object that will contain the data.</li>
+	</h4>
+	</ul>
+</section>
+
+<section class="para">
+	<h2>Other AngularJS Capabilites</h2>
+	<h4>While this page reviews the basics of working with simple AngularJS applications, AngularJS has many other capabilities that ease the development of dynamic web apps. Some of these capabilities include:</h4>
+	<ul>
+		<li>Reading data from web servers using $http</li>
+		<li>Easing table or list creation with ng-repeat</li>
+		<li>Reading from SQL databases</li>
+		<li>Contains unique event functions</li>
+		<li>Can be easily integrated with Bootstrap</li>
+	</ul>
+</section>
+
+<section class="para">
+	<h2>What's Next?</h2>
+	<h4>These examples have defined the basic knowledge and syntax needed to get started with simple AngularJS applications. When looking to build dynamic web applications, AngularJS is ideal as it contains more simplified code with no direct DOM manipulation involved. The next example will put these ideas all together into a simple application. </h4>
+	<a href="demo.html"><span class="bold">AngularJS Demo >></span></a>
+</section>
+
+<section class="para">
+	<h5>References
+	<ul class="noStyleUL">
+	<li><a href="http://www.w3schools.com/angular/default.asp">W3Schools</a></li>
+	<li><a href="https://docs.angularjs.org/guide/introduction">AngularJS.org</a></li>
+	<li><a href="https://docs.angularjs.org/misc/downloading">AngularJS.org (2)</a></li>
+	<li><a href="http://www.toptal.com/angular-js/a-step-by-step-guide-to-your-first-angularjs-app">Toptal</a></li>
+	</ul>
+	</h5>
+</section>
+
+</main>
+
+</body>
+</html>

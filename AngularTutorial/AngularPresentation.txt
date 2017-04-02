@@ -1,0 +1,32 @@
+AngularJS positives:
+--Allows for easy building of single-page applications
+--Extends HTML with attributes such as directives and data binding, modules, controllers
+--Eliminates the need for direct DOM manipulation
+--Easy to test
+
+http://www.toptal.com/angular-js/a-step-by-step-guide-to-your-first-angularjs-app
+http://www.w3schools.com/angular/default.asp
+
+Getting started:
+Through a server--
+-Include the Google CDN url in your script tag
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+(minified version)
+-Download & host locally
+Using 1.4.8
+https://docs.angularjs.org/misc/downloading
+
+--Vocab and definitions?
+-ng-directives
+-ng-app
+-ng-model
+-ng-bind
+-{{ expressions }}
+-modules
+-controllers
+http://www.w3schools.com/angular/angular_intro.asp
+--Basic structure of AngularJS simple app with comments defining attributes
+--Example of App using the code
+--Link to full code
+
+https://docs.angularjs.org/guide/introduction
