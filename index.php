@@ -620,7 +620,7 @@ if (isset($_POST["submit"])) {
 				<span class="technical">
 					<strong>Technical Skills</strong>
 					<br>
-					HTML5, CSS3, Sass, Javascript, jQuery, JSON, AJAX, Processing, C#, Bootstrap, Responsive Design, Google Analytics, Adobe Omniture, CMS, Social Media</span>
+					HTML5, CSS3, Sass, Javascript, jQuery, JSON, AJAX, Processing, C#, Grunt, Gulp, Git, Bootstrap, Responsive Design, Google Analytics, Adobe Omniture, CMS, Social Media</span>
 				<br><br>
 
 				<span class="design">
