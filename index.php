@@ -560,6 +560,20 @@ if (isset($_POST["submit"])) {
 		<div class="col-sm-12">
 			<h4>EXPERIENCE</h4><hr>
 			<p>
+				<span class="tbwa">
+					<strong>Front-End Web Developer</strong>
+					<br>
+					<em>TBWA\WorldHealth<br>July 2017-Present</em>
+				</span>
+			</p><br>
+			<ul class="exp">
+				<li>Develop and maintain client websites, web applications, and HTML e-mails</li>
+				<li>Produce front-end code based on Photoshop and InDesign layouts</li>
+				<li>Complete cross-browser and cross-device testing for responsive websites</li>
+				<li>Implement analytics tracking and tag management updates as needed</li>
+				<li>Collaborate with Project Managers and Coordinators to balance multiple client projects and meet weekly deadlines</li>
+			</ul><br>
+			<p>
 				<span class="wdpr">
 					<strong>Communication Technology Intern</strong>
 					<br>
@@ -568,9 +582,10 @@ if (isset($_POST["submit"])) {
 			</p><br>
 			<ul class="exp">
 				<li>Completed website analytics reporting and communication</li>
-				<li>Posted content to WDP&R intranet, ensuring sites were up-to-date</li>
-				<li>Provided technology support for WDP&R Public Affairs, including web, CMS, and intranet</li>
+				<li>Posted content to WDP&amp;R intranet, ensuring sites were up-to-date</li>
+				<li>Provided technology support for WDP&amp;R Public Affairs, including web, CMS, and intranet</li>
 				<li>Provided testing support and bug reports/feedback as needed</li>
+				<li>Published informative blog series for internal communications teams on web, user experience, and WordPress concepts</li>
 			</ul><br>
 			<p>	
 				<span class="lbi">
@@ -611,7 +626,7 @@ if (isset($_POST["submit"])) {
 					<em>User Experience Design, Information Architecture</em>
 					<br>
 					Collaborated in agile/scrum based team environment; Implemented user experience research and design; Developed build plan for future 
-					Columbia College Chicago Interactive Arts & Media department alumni network
+					Columbia College Chicago Interactive Arts &amp; Media department alumni network
 				</span><br><br>
 			</p>
 
@@ -691,11 +706,11 @@ if (isset($_POST["submit"])) {
 			<ul>
 				<li><a href="https://www.linkedin.com/in/danielle-canchola-983a69105" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a></li>
 				<li><a href="https://plus.google.com/u/0/115850913030569709468/posts" target="_blank"><i class="fa fa-lg fa-google-plus"></i></a></li>
-				<li><a href="https://twitter.com/danielle_can" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
+				<!--<li><a href="https://twitter.com/danielle_can" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>-->
 				<li><a href="https://www.pinterest.com/danielle_can/" target="_blank"><i class="fa fa-lg fa-pinterest"></i></a></li>
 				<li><a href="https://gist.github.com/dcanchola" target="_blank"><i class="fa fa-lg fa-github"></i></a></li>
 			</ul>
-			<p>©2017 Danielle Canchola</p>
+			<p>©2018 Danielle Canchola</p>
 		</footer>
 	</div>
 </div>

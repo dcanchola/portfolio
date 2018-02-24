@@ -36,31 +36,40 @@ window.onload = function() {
    		handleResponsiveNavStyle();
    		hoverDivRatios();
 	});
-
 	document.addEventListener("scroll", navStyleOnScroll);
 }
 
+/*get value of body container overflow styles to detect what device media query we're in
+function detectDeviceMediaQuery() {
+	var bodyContainer = document.querySelector('#bodyContainer');
+	var bodyContainerStyle = getComputedStyle(bodyContainer, null).getPropertyValue('overflow');
+	return bodyContainerStyle;
+}*/
+
+//handle navigation placement for responsive devices
 function handleResponsiveNavStyle() {
 	var nav = document.querySelector('.navbar');
-	if(window.innerWidth < 992) {
+
+	if(window.innerWidth < 992 /*|| detectDeviceMediaQuery() == "hidden"*/) {
 		nav.classList.add("navbar-fixed-top");
 	}
-	if(window.innerWidth >= 992) {
+	if(window.innerWidth >= 992 /*&& detectDeviceMediaQuery() == "visible"*/) {
 		if(nav.classList.contains("navbar-fixed-top")) {
 			nav.classList.remove("navbar-fixed-top");
 		}
 	}
 }
 
+//snap navigation on scroll
 function navStyleOnScroll() {
 	if(window.innerWidth >= 992) {
 		var findActive = document.querySelector(".nav .active");
-		if(findActive != null) {
+		if(findActive != null /*|| detectDeviceMediaQuery() =="hidden"*/) {
 			var getNav = document.querySelector(".navbar");
 			getNav.classList.add("navbar-fixed-top");
 			getNav.style.top = "0px";
 		}
-		if(findActive == null) {
+		if(findActive == null /*&& detectDeviceMediaQuery() == "visible"*/) {
 			var getNav = document.querySelector(".navbar");
 			getNav.classList.remove("navbar-fixed-top");
 			getNav.style.top = "auto";
@@ -68,6 +77,7 @@ function navStyleOnScroll() {
 	}
 }
 
+//handle ratios of portfolio hover divs against their respective images
 function hoverDivRatios() {
 	var hoverDiv = $('.hover');
 	var getLinks = $('.hoverDiv a');

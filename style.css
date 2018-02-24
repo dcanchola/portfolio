@@ -1538,3 +1538,86 @@ footer i {
 		margin:auto;
 	}
 }
+
+/*styles to handle ipad pro & conflicting tablet/desktop styles
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) and (orientation: portrait) {
+	#bodyContainer {
+		overflow:hidden;
+	}
+
+	#about2 {
+		height:auto;
+	}
+
+	#about p {
+		margin-left:auto;
+	}
+
+	.navbar {
+		top:0 !important;
+		display:flex;
+		align-items:center;
+		height:72px;
+	}
+
+	.navbar-nav {
+		width:700px;
+	}
+
+	.navbar .nav li a {
+		font-size:22px;
+	}
+
+	.titleContainer h2 {
+		font-size:60px;
+		margin:1.5em 0 0 .5em;
+	}
+
+	.btn {
+		margin:2em 0 0 1.3em;
+		font-size:30px;
+	}
+
+	.balloon {
+		left:65%;
+		width:260px;
+		top:6em;
+		animation:floatMobile 4s ease-in-out infinite alternate;
+	}
+
+	.svg {
+	    height: 450px;
+	    bottom: 300px;
+	    left: 6%;
+	}
+
+	.pinwheel {
+	    width: 375px;
+	    top: -65px;
+	    left:-14px;
+	    height: 375px;
+	}
+
+	.stick {
+		width:20px;
+		height:400px;
+		left:165px;
+	}
+
+	#li1 a,
+	#li2 a,
+	#li3 a,
+	#li4 a,
+	#li1.active a,
+	#li2.active a,
+	#li3.active a,
+	#li4.active a {
+		height:72px;
+		padding-top:1.25em;
+	}
+
+	#contact {
+		height:auto;
+	}
+}*/
+
